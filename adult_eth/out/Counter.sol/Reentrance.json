@@ -1,0 +1,663 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50608b8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632e1a7d4d14602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604e57600080fd5b503591905056fea26469706673582212200c9b6e27795f949040dcd07fb1ee256fc4856688265c56ee97ff5dfd859c5d3964736f6c63430008100033",
+    "sourceMap": "65:72:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80632e1a7d4d14602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604e57600080fd5b503591905056fea26469706673582212200c9b6e27795f949040dcd07fb1ee256fc4856688265c56ee97ff5dfd859c5d3964736f6c63430008100033",
+    "sourceMap": "65:72:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;90:45;;;;;;:::i;:::-;;;;;14:180:1;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:1;;14:180;-1:-1:-1;14:180:1:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "withdraw(uint256)": "2e1a7d4d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Counter.sol\":\"Reentrance\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Counter.sol\":{\"keccak256\":\"0x983afb8628b7a2aa5224e59cbe5bbdf385f1f53582d20f94edccf9b35522c79e\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://427a729490a46b2569cd04c534539639f90034369970def82bc37b7e70bafccd\",\"dweb:/ipfs/QmbwKuz7WSmVwZsQT5QLMXpkAWpiCLJM77ifRFw847f2Bf\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.16+commit.07a7930e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "withdraw"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Counter.sol": "Reentrance"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Counter.sol": {
+        "keccak256": "0x983afb8628b7a2aa5224e59cbe5bbdf385f1f53582d20f94edccf9b35522c79e",
+        "urls": [
+          "bzz-raw://427a729490a46b2569cd04c534539639f90034369970def82bc37b7e70bafccd",
+          "dweb:/ipfs/QmbwKuz7WSmVwZsQT5QLMXpkAWpiCLJM77ifRFw847f2Bf"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Counter.sol",
+    "id": 47,
+    "exportedSymbols": {
+      "Reentrance": [
+        8
+      ],
+      "solve": [
+        46
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:496:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:0",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 8,
+        "nodeType": "ContractDefinition",
+        "src": "65:72:0",
+        "nodes": [
+          {
+            "id": 7,
+            "nodeType": "FunctionDefinition",
+            "src": "90:45:0",
+            "body": {
+              "id": 6,
+              "nodeType": "Block",
+              "src": "129:6:0",
+              "statements": []
+            },
+            "functionSelector": "2e1a7d4d",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdraw",
+            "nameLocation": "99:8:0",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "113:7:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7,
+                  "src": "108:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "107:14:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "129:0:0"
+            },
+            "scope": 8,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Reentrance",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          8
+        ],
+        "name": "Reentrance",
+        "nameLocation": "74:10:0",
+        "scope": 47,
+        "usedErrors": []
+      },
+      {
+        "id": 46,
+        "nodeType": "ContractDefinition",
+        "src": "139:396:0",
+        "nodes": [
+          {
+            "id": 16,
+            "nodeType": "VariableDeclaration",
+            "src": "178:81:0",
+            "constant": false,
+            "functionSelector": "d4b83992",
+            "mutability": "mutable",
+            "name": "target",
+            "nameLocation": "196:6:0",
+            "scope": 46,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Reentrance_$8",
+              "typeString": "contract Reentrance"
+            },
+            "typeName": {
+              "id": 12,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 11,
+                "name": "Reentrance",
+                "nameLocations": [
+                  "178:10:0"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 8,
+                "src": "178:10:0"
+              },
+              "referencedDeclaration": 8,
+              "src": "178:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Reentrance_$8",
+                "typeString": "contract Reentrance"
+              }
+            },
+            "value": {
+              "arguments": [
+                {
+                  "hexValue": "307842324231434331363862316342443362326133323439313138354339633939423331636337353838",
+                  "id": 14,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "216:42:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "value": "0xB2B1CC168b1cBD3b2a32491185C9c99B31cc7588"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                ],
+                "id": 13,
+                "name": "Reentrance",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 8,
+                "src": "205:10:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_contract$_Reentrance_$8_$",
+                  "typeString": "type(contract Reentrance)"
+                }
+              },
+              "id": 15,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "nameLocations": [],
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "205:54:0",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Reentrance_$8",
+                "typeString": "contract Reentrance"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 18,
+            "nodeType": "VariableDeclaration",
+            "src": "265:18:0",
+            "constant": false,
+            "functionSelector": "3d79d1c8",
+            "mutability": "mutable",
+            "name": "bal",
+            "nameLocation": "280:3:0",
+            "scope": 46,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "265:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 28,
+            "nodeType": "FunctionDefinition",
+            "src": "289:92:0",
+            "body": {
+              "id": 27,
+              "nodeType": "Block",
+              "src": "326:55:0",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "302e303031",
+                        "id": 24,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "353:11:0",
+                        "subdenomination": "ether",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1000000000000000_by_1",
+                          "typeString": "int_const 1000000000000000"
+                        },
+                        "value": "0.001"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_1000000000000000_by_1",
+                          "typeString": "int_const 1000000000000000"
+                        }
+                      ],
+                      "expression": {
+                        "id": 21,
+                        "name": "target",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 16,
+                        "src": "337:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Reentrance_$8",
+                          "typeString": "contract Reentrance"
+                        }
+                      },
+                      "id": 23,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "344:8:0",
+                      "memberName": "withdraw",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 7,
+                      "src": "337:15:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 25,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "337:28:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 26,
+                  "nodeType": "ExpressionStatement",
+                  "src": "337:28:0"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "298:6:0",
+            "parameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:2:0"
+            },
+            "returnParameters": {
+              "id": 20,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "326:0:0"
+            },
+            "scope": 46,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 45,
+            "nodeType": "FunctionDefinition",
+            "src": "386:147:0",
+            "body": {
+              "id": 44,
+              "nodeType": "Block",
+              "src": "418:115:0",
+              "statements": [
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 35,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "expression": {
+                          "id": 31,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "431:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "435:6:0",
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "431:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 33,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "442:7:0",
+                      "memberName": "balance",
+                      "nodeType": "MemberAccess",
+                      "src": "431:18:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": ">=",
+                    "rightExpression": {
+                      "hexValue": "302e303031",
+                      "id": 34,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "453:11:0",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000000000000000_by_1",
+                        "typeString": "int_const 1000000000000000"
+                      },
+                      "value": "0.001"
+                    },
+                    "src": "431:33:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 43,
+                  "nodeType": "IfStatement",
+                  "src": "428:99:0",
+                  "trueBody": {
+                    "id": 42,
+                    "nodeType": "Block",
+                    "src": "474:53:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "hexValue": "302e303031",
+                              "id": 39,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "504:11:0",
+                              "subdenomination": "ether",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_1000000000000000_by_1",
+                                "typeString": "int_const 1000000000000000"
+                              },
+                              "value": "0.001"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_1000000000000000_by_1",
+                                "typeString": "int_const 1000000000000000"
+                              }
+                            ],
+                            "expression": {
+                              "id": 36,
+                              "name": "target",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 16,
+                              "src": "488:6:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Reentrance_$8",
+                                "typeString": "contract Reentrance"
+                              }
+                            },
+                            "id": 38,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberLocation": "495:8:0",
+                            "memberName": "withdraw",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 7,
+                            "src": "488:15:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                              "typeString": "function (uint256) external"
+                            }
+                          },
+                          "id": 40,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "488:28:0",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 41,
+                        "nodeType": "ExpressionStatement",
+                        "src": "488:28:0"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 29,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "394:2:0"
+            },
+            "returnParameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "418:0:0"
+            },
+            "scope": 46,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 9,
+              "name": "Reentrance",
+              "nameLocations": [
+                "157:10:0"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 8,
+              "src": "157:10:0"
+            },
+            "id": 10,
+            "nodeType": "InheritanceSpecifier",
+            "src": "157:10:0"
+          }
+        ],
+        "canonicalName": "solve",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          46,
+          8
+        ],
+        "name": "solve",
+        "nameLocation": "148:5:0",
+        "scope": 47,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 0
+}
